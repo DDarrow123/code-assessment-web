@@ -1,0 +1,10 @@
+.wrapper {
+  margin: 0 auto;
+  // display: grid;
+  &__children-container {
+    display: grid;
+    grid-template-rows: repeat(3, 358px);
+    // grid-template-columns: 285px;
+    grid-template-columns: 1fr;
+  }
+}
