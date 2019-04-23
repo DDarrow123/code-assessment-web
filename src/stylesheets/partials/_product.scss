@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:400,700");
+
+// font-family: 'Chivo', sans-serif;
+// bold: 700
+
 .product-details {
   &__product-img {
     width: 100%;
@@ -8,17 +13,25 @@
     grid-row: 1fr;
     margin: 4%;
     .product-title {
+      font-family: "Chivo", sans-serif;
+      font-weight: 400;
       grid-column: 1/2;
       grid-row: 1/2;
     }
+
     .product-price {
+      font-family: "Chivo", sans-serif;
+      font-weight: 100;
+      font-size: 13px;
       grid-column: 2/3;
       grid-row: 1/3;
       text-align: right;
     }
   }
   .inventory-remaining {
+    font-family: helvetica;
     font-size: 12px;
     margin: 4%;
+    color: #9b9b9b;
   }
 }

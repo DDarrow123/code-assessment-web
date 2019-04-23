@@ -1,3 +1,68 @@
 @import "partials/productslist";
 @import "partials/productitem";
 @import "partials/product";
+
+@import url("https://fonts.googleapis.com/css?family=Chivo:400,700");
+
+// font-family: 'Chivo', sans-serif;
+// bold: 700
+
+.header-grid {
+  &__store-title {
+    font-family: "Chivo", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &__store-cart-status {
+    display: flex;
+    // flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5em;
+    img {
+      margin-right: 0.5em;
+      // margin-top: 0;
+    }
+    h5 {
+      margin: 0;
+      font-family: helvetica;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  // (max-width: 330px),
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-row: 1fr;
+    // margin: 4%;
+    &__store-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__store-cart-status {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-row: 1fr;
+    // margin: 4%;
+    &__store-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__store-cart-status {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+  }
+}

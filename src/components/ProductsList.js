@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ProductsList = ({ title, children }) => (
   <div className="wrapper">
-    <h3>{title}</h3>
+    <h3>{null}</h3>
     <div className="wrapper__children-container">{children}</div>
   </div>
 );

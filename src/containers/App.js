@@ -6,10 +6,12 @@ import cart_2 from "../images/cart_2.svg";
 
 const App = () => (
   <div>
-    <h2>Acme Store</h2>
-    <div>
-      <h5> Your cart is empty </h5>
-      <img src={cart_2} />
+    <div className="header-grid">
+      <h2 className="header-grid__store-title">Acme Store</h2>
+      <div className="header-grid__store-cart-status">
+        <img src={cart_2} />
+        <h5> Your cart is empty </h5>
+      </div>
     </div>
     <hr />
     <ProductsContainer />
@@ -19,5 +21,3 @@ const App = () => (
 );
 
 export default App;
-
-// <img src={mobile_cart_btn} />
